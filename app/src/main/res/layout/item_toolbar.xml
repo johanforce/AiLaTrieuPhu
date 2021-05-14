@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:weightSum="3"
+    android:background="@color/timDen">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_no_avatar"
+            android:id="@+id/iv_avatar"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+<!--        <ProgressBar-->
+<!--            android:id="@+id/pr_time"-->
+<!--            android:layout_gravity="center"-->
+<!--            style="@style/Widget.AppCompat.ProgressBar"-->
+<!--            android:autofillHints="sdasd"-->
+<!--            android:indeterminateDuration="1000"-->
+<!--            android:indeterminate="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_width="56dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:max="30"/>-->
+        <ProgressBar
+            android:id="@+id/prgBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:max="30"
+            android:background="@drawable/circle_shape"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/tv_time"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_money"
+            android:id="@+id/iv_coin" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150,000,000"
+            android:id="@+id/tv_score"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>
